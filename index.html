@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ULTIMATE LEADER | Portfolio</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark: #0a0a0a;
+            --white: #ffffff;
+            --red: #ff4b2b;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+            border-bottom: 5px solid var(--gold);
+        }
+
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, var(--gold), #f9f295, var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -5px;
+            animation: pulse 2s infinite;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+            margin-top: -20px;
+        }
+
+        /* Stats Section - 이재용의 재력 */
+        .wealth-strip {
+            background: var(--gold);
+            color: black;
+            padding: 20px 0;
+            font-weight: 900;
+            font-size: 2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .wealth-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 100px 10%;
+            border-bottom: 1px solid #333;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        /* Trump Energy - 똘끼 스타일 */
+        .card {
+            background: #151515;
+            padding: 40px;
+            border-left: 10px solid var(--red);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotate(-1deg);
+            background: var(--red);
+        }
+
+        /* Harvard Section - 학식 */
+        .academic {
+            border-left: 10px solid #A51C30; /* Harvard Crimson */
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: var(--gold);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 30px var(--gold);
+            transform: translateY(-5px);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p style="color: var(--gold); letter-spacing: 5px;">THE DOCTOR. THE BILLIONAIRE. THE ICON.</p>
+        <h1>I AM LEGEND</h1>
+        <div class="tagline">하버드 박사학위로 무장한 대한민국 주식 재산 1위의 광기</div>
+        <a href="#contact" class="btn">나에게 무릎 꿇기</a>
+    </header>
+
+    <div class="wealth-strip">
+        <div class="wealth-content">
+            실시간 순자산: ₩30,587,660,000,000+ (증가 중) | 삼성전자 최대주주 | 하버드대 박사 (PhD) | 전 세계가 주목하는 압도적 존재감 | NO.1 WEALTH IN KOREA | 
+            실시간 순자산: ₩30,587,660,000,000+ (증가 중) | 삼성전자 최대주주 | 하버드대 박사 (PhD) | 전 세계가 주목하는 압도적 존재감 | NO.1 WEALTH IN KOREA |
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="grid">
+            <div>
+                <h2>The Mind</h2>
+                <p style="font-size: 1.4rem;">
+                    단순한 부자가 아닙니다. **하버드(Harvard)**에서 갈고닦은 정교한 논리와, 누구도 예측할 수 없는 **거침없는 실행력**이 만났습니다. 
+                    나는 법을 만들고, 시장을 지배하며, 불가능을 '당연함'으로 바꿉니다.
+                </p>
+            </div>
+            <div class="card academic">
+                <h3>Ph.D. From Harvard</h3>
+                <p>지성은 나의 가장 강력한 무기입니다. 복잡한 경제 수식과 철학적 사유를 통해 세상을 재설계합니다. 내 논문은 곧 법전이 됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="personality" style="background: #111;">
+        <h2>The Wild Card</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Unpredictable Moves</h3>
+                <p>"남들이 Yes라고 할 때, 나는 그들의 회사를 삽니다." <br>예측 불가능함은 나의 가장 큰 매력이자 전략
